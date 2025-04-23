@@ -1,0 +1,93 @@
+---
+title: Framework Microcidade Empresarial
+sidebar_position: 1
+---
+
+# Framework Microcidade Empresarial
+
+Este documento detalha como organizar uma empresa como uma **microcidade digital inteligente**, onde cada área atua como um setor urbano, com agentes, rotinas e regras próprias.
+
+---
+
+## 🏛️ Setores da Microcidade
+
+### 1. Cartório (`agentos-people`)
+- Registro e autenticação de identidade (RFID, JWT, faceID)
+- Controle de cargos, permissões e histórico
+
+### 2. Loja (`agentos-sales`)
+- Produtos, preços, estoque e promoções
+- Vendas integradas com cashback, QR e WhatsApp
+
+### 3. Correios (`inbox-agent`)
+- Envio e rastreio interno de mensagens
+- Arquivamento, leitura, automação via tags
+
+### 4. Banco (`agentos-finance`)
+- Controle de saldo, repasses, histórico
+- API bancária externa e regras internas por tenant
+
+### 5. Câmara Municipal (`promptos`)
+- Execução de planos complexos por linguagem natural
+- Planejamento, fallback, feedback de ferramentas
+
+### 6. Vigilância (`audit_log`)
+- Log narrativo com `trace_id`, `agent_id`, `tool_used`
+- Replay de eventos, explicabilidade para humanos e IA
+
+### 7. Estafetas e Mobilidade (`agentos-delivery`)
+- Rastreamento em tempo real, chat anônimo, status
+- Filtros por geolocalização, categoria e SLA
+
+### 8. Prefeitura (`vox`)
+- Notificações e alertas para humanos
+- Interface unificada por papel e contexto
+
+---
+
+## 🔄 Ciclos da Cidade
+
+1. Planejar via PromptOS
+2. Executar por agentes
+3. Registrar por audit log
+4. Explicar via Vox
+5. Reaprender via memória vetorial
+
+---
+
+## ⚙️ Exemplo de Fluxo Real
+
+> *"O gerente deseja lançar uma promoção de R$20 em produtos da categoria 'tribal' para clientes com compras acima de R$100 nos últimos 30 dias."*
+
+```json
+{
+  "agent": "sales",
+  "tool": "create_campaign",
+  "filters": {
+    "category": "tribal",
+    "min_total_last_30_days": 100
+  },
+  "action": {
+    "type": "discount",
+    "value": 20
+  }
+}
+```
+
+---
+
+## 📚 Variações e Inspirações
+
+- `Cartório` pode conter CPF e reputação de entrega
+- `Banco` pode calcular cashback ou parcelamento
+- `Loja` pode operar em B2C ou B2B
+- `Correios` pode atuar como chat interno ou inbox cronológico
+
+---
+
+## ✅ Conclusão
+
+Esse framework serve como base viva para qualquer sistema agentic.  
+Cada setor é um módulo. Cada cidadão é um usuário com histórico e papel.  
+O sistema aprende, governa e evolui como uma cidade real.
+

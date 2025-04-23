@@ -1,0 +1,506 @@
+---
+title: Glossário do AgentOS
+sidebar_position: 99
+---
+
+# Glossário Técnico e Agentic
+
+Este glossário cobre os principais termos, conceitos e módulos usados na Microcidade AgentOS.
+
+### AgentOS
+Sistema operacional modular orientado a agentes, com execução baseada em protocolo MCP.
+
+---
+
+### PromptOS
+Mente cognitiva que interpreta e executa objetivos complexos via linguagem natural.
+
+---
+
+### Vox
+Agente de interface, notificações e explicações — atua como porta-voz dos sistemas internos.
+
+---
+
+### Fusion App
+Frontend noir, mobile-first, inspirado no ChatGPT e integrado ao backend AgentOS.
+
+---
+
+### MCP
+Protocolo de Comunicação Modular entre Agentes, usado para envio de comandos e contexto.
+
+---
+
+### Agent
+Unidade lógica autocontida com função específica (ex: vendas, entregas, pessoas).
+
+---
+
+### Tenant
+Empresa ou instância segregada no sistema multi-tenant do AgentOS.
+
+---
+
+### Trace ID
+Identificador único que acompanha todas as ações e logs para rastreabilidade total.
+
+---
+
+### Audit Log
+Sistema de registros estruturados com narração de eventos e contexto de execução.
+
+---
+
+### Webhook
+Canal de integração externo acionado por eventos internos dos agentes.
+
+---
+
+### Redis
+Banco em memória usado para cache, sessões, pub/sub e memória de curto prazo.
+
+---
+
+### MongoDB
+Banco NoSQL usado para persistência, logs, embed de vetores e documentos.
+
+---
+
+### Celery
+Sistema de filas usado para tarefas assíncronas como vendas, entregas e cálculos.
+
+---
+
+### AgentRegistry
+Catálogo interno de agentes e suas ferramentas, com verificação de permissões.
+
+---
+
+### Sales Agent
+Agente responsável por estoque, promoções, vendas e cálculos de integração.
+
+---
+
+### People Agent
+Agente responsável por cadastro, papéis, permissões e regras de acesso.
+
+---
+
+### Delivery Agent
+Agente responsável por rastreamento, status, entregas e mensagens de rota.
+
+---
+
+### Inbox Agent
+Agente de mensagens internas, rastreamento de leitura, arquivamento e automação.
+
+---
+
+### Finance Agent
+Agente responsável por saldo, transferências, regras bancárias e relatórios.
+
+---
+
+### Auth Token
+Token JWT com contexto, permissões e tenant embutido.
+
+---
+
+### Memory Core
+Módulo responsável pela memória híbrida (curto prazo via Redis, longo via vetor).
+
+---
+
+### Vetor
+Representação numérica de conteúdo usada para busca semântica e memória contextual.
+
+---
+
+### TTL
+Tempo de vida de uma entrada em cache/memória curta (ex: 15min para conversas).
+
+---
+
+### Webhook Listener
+Serviço que escuta eventos externos e converte em comandos internos.
+
+---
+
+### Fallback
+Resposta alternativa quando uma execução falha ou precisa de decisão humana.
+
+---
+
+### Replay
+Reexecução de uma ação baseada em trace ID, com ou sem modificação.
+
+---
+
+### Chat ID
+Identificador único de uma conversa usada para filtrar memória e contexto.
+
+---
+
+### Supervisor Agent
+Agente superior que coordena ou cancela ações de outros agentes.
+
+---
+
+### Prompt Engineering
+Criação de comandos estruturados e condicionais para IAs.
+
+---
+
+### Voice TTS
+Conversão de texto para voz usada no Vox ou atendimento.
+
+---
+
+### Vision Agent
+Agente responsável por imagens, OCR, reconhecimento facial ou embedders.
+
+---
+
+### Fusion Flip
+App iOS baseado em SwiftUI que espelha a lógica do Fusion App web.
+
+---
+
+### Railway
+Plataforma usada para deploy do backend e workers.
+
+---
+
+### Vercel
+Plataforma usada para deploy do frontend da documentação e Fusion App.
+
+---
+
+### Supabase
+Plataforma de dados usada inicialmente como backend antes da migração total para Mongo.
+
+---
+
+### JWT
+JSON Web Token usado para autenticação e autorização com expiração.
+
+---
+
+### RBAC
+Controle de acesso baseado em papéis — ex: admin, operador, estafeta.
+
+---
+
+### Multi-Tenant
+Arquitetura que isola dados e regras por empresa ou instância.
+
+---
+
+### Semantic Executor
+Executor que traduz comandos em linguagem natural para MCP executável.
+
+---
+
+### WhatsApp Gateway
+Integração com API Meta para atendimento e automação.
+
+---
+
+### Vox Console
+Interface administrativa que exibe insights, alertas e comandos ao humano.
+
+---
+
+### Prompt Fallback
+Estrutura que permite correção, repetição ou escalonamento de um prompt.
+
+---
+
+### Copilot
+IA com foco em um setor ou operação — como vendas, jurídico ou análise.
+
+---
+
+### Merge Cognitivo
+Decisão assistida por IA sobre qual sugestão ou plano deve prevalecer.
+
+---
+
+### PR Agent
+Agente que cria, avalia ou aprova Pull Requests com base em mudanças no sistema.
+
+---
+
+### Audit Trail
+Sequência de eventos rastreáveis com contexto, ator e resultado.
+
+---
+
+### Pre-commit Hook
+Verificação automática antes de aceitar código ou dados em produção.
+
+---
+
+### X-Trace-ID
+Cabeçalho HTTP que carrega o ID de rastreamento de ações entre serviços.
+
+---
+
+### Prompt 006
+Prompt voltado para explicabilidade e diagnóstico de falhas.
+
+---
+
+### Prompt 009
+Prompt voltado para autoedição assistida de código pelo sistema.
+
+---
+
+### AgentOS
+Sistema operacional modular orientado a agentes, com execução baseada em protocolo MCP.
+
+---
+
+### PromptOS
+Mente cognitiva que interpreta e executa objetivos complexos via linguagem natural.
+
+---
+
+### Vox
+Agente de interface, notificações e explicações — atua como porta-voz dos sistemas internos.
+
+---
+
+### Fusion App
+Frontend noir, mobile-first, inspirado no ChatGPT e integrado ao backend AgentOS.
+
+---
+
+### MCP
+Protocolo de Comunicação Modular entre Agentes, usado para envio de comandos e contexto.
+
+---
+
+### Agent
+Unidade lógica autocontida com função específica (ex: vendas, entregas, pessoas).
+
+---
+
+### Tenant
+Empresa ou instância segregada no sistema multi-tenant do AgentOS.
+
+---
+
+### Trace ID
+Identificador único que acompanha todas as ações e logs para rastreabilidade total.
+
+---
+
+### Audit Log
+Sistema de registros estruturados com narração de eventos e contexto de execução.
+
+---
+
+### Webhook
+Canal de integração externo acionado por eventos internos dos agentes.
+
+---
+
+### Redis
+Banco em memória usado para cache, sessões, pub/sub e memória de curto prazo.
+
+---
+
+### MongoDB
+Banco NoSQL usado para persistência, logs, embed de vetores e documentos.
+
+---
+
+### Celery
+Sistema de filas usado para tarefas assíncronas como vendas, entregas e cálculos.
+
+---
+
+### AgentRegistry
+Catálogo interno de agentes e suas ferramentas, com verificação de permissões.
+
+---
+
+### Sales Agent
+Agente responsável por estoque, promoções, vendas e cálculos de integração.
+
+---
+
+### People Agent
+Agente responsável por cadastro, papéis, permissões e regras de acesso.
+
+---
+
+### Delivery Agent
+Agente responsável por rastreamento, status, entregas e mensagens de rota.
+
+---
+
+### Inbox Agent
+Agente de mensagens internas, rastreamento de leitura, arquivamento e automação.
+
+---
+
+### Finance Agent
+Agente responsável por saldo, transferências, regras bancárias e relatórios.
+
+---
+
+### Auth Token
+Token JWT com contexto, permissões e tenant embutido.
+
+---
+
+### Memory Core
+Módulo responsável pela memória híbrida (curto prazo via Redis, longo via vetor).
+
+---
+
+### Vetor
+Representação numérica de conteúdo usada para busca semântica e memória contextual.
+
+---
+
+### TTL
+Tempo de vida de uma entrada em cache/memória curta (ex: 15min para conversas).
+
+---
+
+### Webhook Listener
+Serviço que escuta eventos externos e converte em comandos internos.
+
+---
+
+### Fallback
+Resposta alternativa quando uma execução falha ou precisa de decisão humana.
+
+---
+
+### Replay
+Reexecução de uma ação baseada em trace ID, com ou sem modificação.
+
+---
+
+### Chat ID
+Identificador único de uma conversa usada para filtrar memória e contexto.
+
+---
+
+### Supervisor Agent
+Agente superior que coordena ou cancela ações de outros agentes.
+
+---
+
+### Prompt Engineering
+Criação de comandos estruturados e condicionais para IAs.
+
+---
+
+### Voice TTS
+Conversão de texto para voz usada no Vox ou atendimento.
+
+---
+
+### Vision Agent
+Agente responsável por imagens, OCR, reconhecimento facial ou embedders.
+
+---
+
+### Fusion Flip
+App iOS baseado em SwiftUI que espelha a lógica do Fusion App web.
+
+---
+
+### Railway
+Plataforma usada para deploy do backend e workers.
+
+---
+
+### Vercel
+Plataforma usada para deploy do frontend da documentação e Fusion App.
+
+---
+
+### Supabase
+Plataforma de dados usada inicialmente como backend antes da migração total para Mongo.
+
+---
+
+### JWT
+JSON Web Token usado para autenticação e autorização com expiração.
+
+---
+
+### RBAC
+Controle de acesso baseado em papéis — ex: admin, operador, estafeta.
+
+---
+
+### Multi-Tenant
+Arquitetura que isola dados e regras por empresa ou instância.
+
+---
+
+### Semantic Executor
+Executor que traduz comandos em linguagem natural para MCP executável.
+
+---
+
+### WhatsApp Gateway
+Integração com API Meta para atendimento e automação.
+
+---
+
+### Vox Console
+Interface administrativa que exibe insights, alertas e comandos ao humano.
+
+---
+
+### Prompt Fallback
+Estrutura que permite correção, repetição ou escalonamento de um prompt.
+
+---
+
+### Copilot
+IA com foco em um setor ou operação — como vendas, jurídico ou análise.
+
+---
+
+### Merge Cognitivo
+Decisão assistida por IA sobre qual sugestão ou plano deve prevalecer.
+
+---
+
+### PR Agent
+Agente que cria, avalia ou aprova Pull Requests com base em mudanças no sistema.
+
+---
+
+### Audit Trail
+Sequência de eventos rastreáveis com contexto, ator e resultado.
+
+---
+
+### Pre-commit Hook
+Verificação automática antes de aceitar código ou dados em produção.
+
+---
+
+### X-Trace-ID
+Cabeçalho HTTP que carrega o ID de rastreamento de ações entre serviços.
+
+---
+
+### Prompt 006
+Prompt voltado para explicabilidade e diagnóstico de falhas.
+
+---
+
+### Prompt 009
+Prompt voltado para autoedição assistida de código pelo sistema.
